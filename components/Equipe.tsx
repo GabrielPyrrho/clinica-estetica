@@ -40,9 +40,9 @@ export default function Equipe() {
           >
             <div className="bg-gradient-to-br from-rose-100 to-pink-100 rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/images/equipe/dra-eduarda-certificado.jpg"
+                src="/images/equipe/certificado .jpg"
                 alt="Dra. Eduarda Chaves - Equipe Lumina Estética"
-                className="w-full h-96 object-cover"
+                className="w-full h-[530px] object-cover object-[center_30%]"
               />
             </div>
             
@@ -146,9 +146,9 @@ export default function Equipe() {
               {/* Process Image */}
               <div className="relative">
                 <img
-                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-                  alt="Processo de atendimento"
-                  className="w-full h-64 object-cover rounded-2xl"
+                  src="/images/equipe/atendimento.jpg"
+                  alt="Processo de atendimento - Dra. Eduarda"
+                  className="w-full h-72 object-cover object-[center_20%] rounded-2xl"
                 />
               </div>
 

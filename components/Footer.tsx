@@ -17,16 +17,12 @@ export default function Footer() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-1"
           >
-            <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-rose-400 to-pink-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">L</span>
-              </div>
-              <div>
-                <div className="font-bold text-xl bg-gradient-to-r from-rose-400 to-pink-400 bg-clip-text text-transparent">
-                  LUMINA
-                </div>
-                <div className="text-xs text-gray-400 -mt-1">ESTÉTICA AVANÇADA</div>
-              </div>
+            <div className="mb-6">
+              <img
+                src="/images/logo/ChatGPT Image 18 de set. de 2025, 01_52_43.png"
+                alt="Lumina Estética Avançada"
+                className="h-20 w-auto object-contain filter brightness-0 invert"
+              />
             </div>
             
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -38,7 +34,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://wa.me/5511999999999"
+                href="https://wa.me/558199101999"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300"
@@ -48,7 +44,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://instagram.com/lumina.estetica"
+                href="https://www.instagram.com/luminaesteticaboaviagem"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gradient-to-r from-pink-500 to-rose-500 rounded-full flex items-center justify-center hover:from-pink-600 hover:to-rose-600 transition-all duration-300"
@@ -105,12 +101,12 @@ export default function Footer() {
               
               <div className="flex items-center space-x-3">
                 <FaPhone className="text-rose-400 flex-shrink-0" />
-                <span className="text-gray-300">(81) 99999-9999</span>
+                <span className="text-gray-300">(81) 99101-9999</span>
               </div>
               
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-rose-400 flex-shrink-0" />
-                <span className="text-gray-300">contato@luminaestetica.com.br</span>
+                <span className="text-gray-300">Luminaestetica_ec@hotmail.com</span>
               </div>
               
               <div className="flex items-start space-x-3">
@@ -134,7 +130,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://wa.me/5581999999999?text=Olá! Gostaria de agendar uma consulta."
+                href="https://wa.me/558199101999?text=Olá! Gostaria de agendar uma consulta."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold py-3 px-4 rounded-2xl hover:from-green-600 hover:to-green-700 transition-all duration-300 text-center"
@@ -145,7 +141,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://wa.me/5511999999999?text=Olá! Gostaria de saber sobre as promoções."
+                href="https://wa.me/558199101999?text=Olá! Gostaria de saber sobre as promoções."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold py-3 px-4 rounded-2xl hover:from-rose-600 hover:to-pink-700 transition-all duration-300 text-center"
@@ -163,7 +159,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://wa.me/5511999999999?text=Olá! Gostaria de receber informações sobre promoções e novidades."
+                href="https://wa.me/558199101999?text=Olá! Gostaria de receber informações sobre promoções e novidades."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-gray-700 text-white font-medium py-3 px-4 rounded-2xl hover:bg-gray-600 transition-all duration-300 text-center border border-gray-600"

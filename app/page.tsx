@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Diferenciais from '@/components/Diferenciais'
 import BeforeAfterGallery from '@/components/BeforeAfterGallery'
+import Ambiente from '@/components/Ambiente'
 import Equipe from '@/components/Equipe'
 import Servicos from '@/components/Servicos'
 import Blog from '@/components/Blog'
@@ -20,6 +21,7 @@ export default function Home() {
         <Diferenciais />
       </div>
       <BeforeAfterGallery />
+      <Ambiente />
       <Equipe />
       <div id="servicos">
         <Servicos />

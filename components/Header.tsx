@@ -41,15 +41,11 @@ export default function Header() {
             className="flex items-center space-x-3 cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            <div className="w-12 h-12 bg-gradient-to-r from-rose-400 to-pink-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-xl">L</span>
-            </div>
-            <div>
-              <div className="font-bold text-xl bg-gradient-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent">
-                LUMINA
-              </div>
-              <div className="text-xs text-gray-600 -mt-1">ESTÉTICA AVANÇADA</div>
-            </div>
+            <img
+              src="/images/logo/ChatGPT Image 18 de set. de 2025, 01_52_43.png"
+              alt="Lumina Estética Avançada"
+              className="h-20 w-auto object-contain"
+            />
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -79,7 +75,7 @@ export default function Header() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://wa.me/5581999999999?text=Olá! Gostaria de mais informações sobre os tratamentos."
+                href="https://wa.me/5581991019999?text=Olá! Gostaria de mais informações sobre os tratamentos."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300"
@@ -89,7 +85,7 @@ export default function Header() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://instagram.com/lumina.estetica"
+                href="https://www.instagram.com/luminaesteticaboaviagem"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full flex items-center justify-center hover:from-pink-600 hover:to-rose-600 transition-all duration-300"
@@ -137,7 +133,7 @@ export default function Header() {
             {/* Mobile Social Links */}
             <div className="flex items-center space-x-3 pt-4 border-t border-gray-200">
               <a
-                href="https://wa.me/5581999999999?text=Olá! Gostaria de mais informações sobre os tratamentos."
+                href="https://wa.me/5581991019999?text=Olá! Gostaria de mais informações sobre os tratamentos."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-green-600 hover:text-green-700 transition-colors duration-300"
@@ -146,7 +142,7 @@ export default function Header() {
                 <span className="text-sm">WhatsApp</span>
               </a>
               <a
-                href="https://instagram.com/lumina.estetica"
+                href="https://www.instagram.com/luminaesteticaboaviagem"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-pink-600 hover:text-pink-700 transition-colors duration-300"

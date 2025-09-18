@@ -28,12 +28,12 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mb-8"
             >
-              <div className="inline-block p-6 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl">
-                <div className="text-6xl font-bold bg-gradient-to-r from-rose-400 to-pink-600 bg-clip-text text-transparent">
-                  L
-                </div>
-                <div className="text-2xl font-light text-gray-700 -mt-2">LUMINA</div>
-                <div className="text-sm text-gray-500 tracking-widest">ESTÉTICA AVANÇADA</div>
+              <div className="inline-block p-6 bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl">
+                <img
+                  src="/images/logo/ChatGPT Image 18 de set. de 2025, 01_52_43.png"
+                  alt="Lumina Estética Avançada"
+                  className="h-32 w-auto object-contain mx-auto"
+                />
               </div>
             </motion.div>
 
@@ -68,7 +68,7 @@ export default function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <a
-                href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta na Lumina Estética."
+                href="https://wa.me/5581991019999?text=Olá! Gostaria de agendar uma consulta na Lumina Estética."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold rounded-full hover:from-green-600 hover:to-green-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -78,7 +78,7 @@ export default function Hero() {
               </a>
               
               <a
-                href="https://instagram.com/lumina.estetica"
+                href="https://www.instagram.com/luminaesteticaboaviagem"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 text-white font-semibold rounded-full hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -102,9 +102,9 @@ export default function Hero() {
                 className="relative overflow-hidden rounded-2xl shadow-2xl"
               >
                 <img
-                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  src="/images/antes-depois/resultado.jpg"
                   alt="Antes e depois - Rejuvenescimento facial"
-                  className="aspect-square object-cover rounded-2xl"
+                  className="aspect-square object-cover object-center rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <p className="text-white p-4 text-sm font-medium">Tratamento Facial</p>
@@ -116,9 +116,9 @@ export default function Hero() {
                 className="relative overflow-hidden rounded-2xl shadow-2xl mt-8"
               >
                 <img
-                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  src="/images/antes-depois/resultado 2.jpg"
                   alt="Antes e depois - Harmonização facial"
-                  className="aspect-square object-cover rounded-2xl"
+                  className="aspect-square object-cover object-center rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <p className="text-white p-4 text-sm font-medium">Rejuvenescimento</p>
@@ -130,9 +130,9 @@ export default function Hero() {
                 className="relative overflow-hidden rounded-2xl shadow-2xl -mt-4"
               >
                 <img
-                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
+                  src="/images/antes-depois/resultado 3.jpg"
                   alt="Antes e depois - Botox"
-                  className="aspect-square object-cover rounded-2xl"
+                  className="aspect-square object-cover object-center rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <p className="text-white p-4 text-sm font-medium">Harmonização</p>
@@ -144,9 +144,9 @@ export default function Hero() {
                 className="relative overflow-hidden rounded-2xl shadow-2xl mt-4"
               >
                 <img
-                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
-                  alt="Antes e depois - Tratamento facial"
-                  className="aspect-square object-cover rounded-2xl"
+                  src="/images/clinica/ambiente 2.jpg"
+                  alt="Ambiente da clínica"
+                  className="aspect-square object-cover object-center rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <p className="text-white p-4 text-sm font-medium">Botox</p>

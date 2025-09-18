@@ -15,6 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link rel="icon" href="/images/logo/ChatGPT Image 18 de set. de 2025, 01_52_43.png" />
+        <link rel="shortcut icon" href="/images/logo/ChatGPT Image 18 de set. de 2025, 01_52_43.png" />
+        <link rel="apple-touch-icon" href="/images/logo/ChatGPT Image 18 de set. de 2025, 01_52_43.png" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )

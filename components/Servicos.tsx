@@ -146,7 +146,7 @@ export default function Servicos() {
                 <motion.a
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  href={`https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre ${servico.titulo}.`}
+                  href={`https://wa.me/558199101999?text=Olá! Gostaria de saber mais sobre ${servico.titulo}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/btn w-full inline-flex items-center justify-center px-6 py-4 bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold rounded-2xl hover:from-rose-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -176,7 +176,7 @@ export default function Servicos() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar uma consulta personalizada."
+              href="https://wa.me/558199101999?text=Olá! Gostaria de agendar uma consulta personalizada."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-semibold rounded-full hover:from-purple-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl"

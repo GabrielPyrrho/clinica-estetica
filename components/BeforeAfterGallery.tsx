@@ -10,21 +10,42 @@ const beforeAfterImages = [
     title: 'Rejuvenescimento Facial',
     description: 'Tratamento completo para redução de rugas e manchas',
     category: 'Facial',
-    image: '/images/antes-depois/facial-rejuvenescimento.jpg'
+    image: '/images/antes-depois/resultado.jpg',
+    details: {
+      procedimento: 'Bioestimulador + Skinbooster',
+      duracao: '60 minutos',
+      resultados: 'Visíveis em 15 dias',
+      manutencao: 'A cada 6 meses',
+      beneficios: ['Reduz rugas finas', 'Melhora textura', 'Hidratação profunda', 'Estimula colágeno']
+    }
   },
   {
     id: 2,
     title: 'Harmonização Facial',
     description: 'Botox e preenchimento para harmonização dos traços',
     category: 'Harmonização',
-    image: '/images/antes-depois/harmonizacao-facial.jpg'
+    image: '/images/antes-depois/resultado 2.jpg',
+    details: {
+      procedimento: 'Botox + Preenchimento labial',
+      duracao: '45 minutos',
+      resultados: 'Imediatos',
+      manutencao: 'Botox: 4-6 meses | Preenchimento: 8-12 meses',
+      beneficios: ['Suaviza expressões', 'Define contornos', 'Equilibra proporções', 'Resultado natural']
+    }
   },
   {
     id: 3,
     title: 'Tratamento de Rugas na Testa',
     description: 'Botox para redução de linhas de expressão',
     category: 'Botox',
-    image: '/images/antes-depois/botox-testa.jpg'
+    image: '/images/antes-depois/resultado 3.jpg',
+    details: {
+      procedimento: 'Toxina Botulínica',
+      duracao: '20 minutos',
+      resultados: '3-7 dias',
+      manutencao: 'A cada 4-6 meses',
+      beneficios: ['Elimina rugas dinâmicas', 'Previne novas rugas', 'Efeito lifting', 'Procedimento rápido']
+    }
   }
 ]
 
@@ -74,7 +95,7 @@ export default function BeforeAfterGallery() {
                   <img
                     src={item.image}
                     alt={`Antes e depois - ${item.title}`}
-                    className="absolute inset-0 w-full h-full object-cover"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                   />
                   
                   {/* Hover Overlay */}
@@ -120,7 +141,7 @@ export default function BeforeAfterGallery() {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
-              className="relative max-w-4xl w-full bg-white rounded-3xl overflow-hidden"
+              className="relative max-w-3xl w-full bg-white rounded-3xl overflow-hidden max-h-[80vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
@@ -132,7 +153,7 @@ export default function BeforeAfterGallery() {
               </button>
 
               {/* Image */}
-              <div className="aspect-video bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+              <div className="h-64 bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
                 <img
                   src={beforeAfterImages.find(img => img.id === selectedImage)?.image}
                   alt={`Antes e depois - ${beforeAfterImages.find(img => img.id === selectedImage)?.title}`}
@@ -142,12 +163,75 @@ export default function BeforeAfterGallery() {
 
               {/* Info */}
               <div className="p-6">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                  {beforeAfterImages.find(img => img.id === selectedImage)?.title}
-                </h3>
-                <p className="text-gray-600">
-                  {beforeAfterImages.find(img => img.id === selectedImage)?.description}
-                </p>
+                {(() => {
+                  const selectedImg = beforeAfterImages.find(img => img.id === selectedImage)
+                  return selectedImg ? (
+                    <>
+                      <div className="mb-4">
+                        <span className="inline-block px-3 py-1 bg-rose-100 text-rose-700 text-sm font-medium rounded-full">
+                          {selectedImg.category}
+                        </span>
+                      </div>
+                      
+                      <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                        {selectedImg.title}
+                      </h3>
+                      
+                      <p className="text-gray-600 mb-6">
+                        {selectedImg.description}
+                      </p>
+                      
+                      {/* Details Grid */}
+                      <div className="grid md:grid-cols-2 gap-6 mb-6">
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-semibold text-gray-800 mb-1">Procedimento</h4>
+                            <p className="text-gray-600 text-sm">{selectedImg.details.procedimento}</p>
+                          </div>
+                          
+                          <div>
+                            <h4 className="font-semibold text-gray-800 mb-1">Duração</h4>
+                            <p className="text-gray-600 text-sm">{selectedImg.details.duracao}</p>
+                          </div>
+                          
+                          <div>
+                            <h4 className="font-semibold text-gray-800 mb-1">Resultados</h4>
+                            <p className="text-gray-600 text-sm">{selectedImg.details.resultados}</p>
+                          </div>
+                          
+                          <div>
+                            <h4 className="font-semibold text-gray-800 mb-1">Manutenção</h4>
+                            <p className="text-gray-600 text-sm">{selectedImg.details.manutencao}</p>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-semibold text-gray-800 mb-3">Benefícios</h4>
+                          <ul className="space-y-2">
+                            {selectedImg.details.beneficios.map((beneficio, idx) => (
+                              <li key={idx} className="flex items-center space-x-2 text-sm text-gray-600">
+                                <div className="w-2 h-2 bg-rose-500 rounded-full"></div>
+                                <span>{beneficio}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                      
+                      {/* CTA */}
+                      <div className="border-t pt-6">
+                        <a
+                          href="https://wa.me/558199101999?text=Olá! Vi o resultado de ${selectedImg.title} no site e gostaria de agendar uma consulta."
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold py-3 px-6 rounded-2xl hover:from-rose-600 hover:to-pink-700 transition-all duration-300 inline-block text-center"
+                        >
+                          Quero Este Resultado
+                        </a>
+                      </div>
+                    </>
+                  ) : null
+                })()}
               </div>
             </motion.div>
           </motion.div>
@@ -170,7 +254,7 @@ export default function BeforeAfterGallery() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://wa.me/5511999999999?text=Olá! Vi os resultados no site e gostaria de agendar uma consulta."
+              href="https://wa.me/558199101999?text=Olá! Vi os resultados no site e gostaria de agendar uma consulta."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-semibold rounded-full hover:from-purple-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl"
