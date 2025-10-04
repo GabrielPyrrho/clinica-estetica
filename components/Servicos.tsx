@@ -6,43 +6,28 @@ import { FaStar, FaArrowRight } from 'react-icons/fa'
 const servicos = [
   {
     id: 1,
-    titulo: 'Botox & Harmonização Facial',
-    descricao: 'Tratamento para rugas de expressão e harmonização dos traços faciais',
+    titulo: 'Microvasos',
+    descricao: 'Tratamento para eliminação de microvasos e capilares visíveis no rosto',
     duracao: '30-45 min',
-    resultados: 'Visíveis em 3-7 dias',
-    beforeAfter: 'antes-depois-1.jpg',
-    beneficios: ['Reduz rugas', 'Harmoniza traços', 'Resultado natural']
+    resultados: 'Visíveis em 1-2 semanas',
+    beneficios: ['Remove microvasos', 'Uniformiza a pele', 'Resultado duradouro']
   },
   {
     id: 2,
-    titulo: 'Preenchimento Labial',
-    descricao: 'Aumento e definição dos lábios com ácido hialurônico de alta qualidade',
-    duracao: '30-45 min',
-    resultados: 'Imediatos',
-    beforeAfter: 'antes-depois-2.jpg',
-    beneficios: ['Aumenta volume labial', 'Define contorno dos lábios', 'Hidratação natural']
-  }
-  // Serviços comentados temporariamente - para reativar, descomente as linhas abaixo
-  /*
-  ,{
-    id: 3,
-    titulo: 'Tratamentos Faciais Avançados',
-    descricao: 'Protocolos personalizados para rejuvenescimento e cuidados da pele',
-    duracao: '60-90 min',
-    resultados: 'Progressivos',
-    beforeAfter: 'antes-depois-3.jpg',
-    beneficios: ['Rejuvenesce', 'Uniformiza tom', 'Melhora textura']
+    titulo: 'Bioestimulador de Colágeno',
+    descricao: 'Estimula a produção natural de colágeno para firmeza e elasticidade da pele',
+    duracao: '45-60 min',
+    resultados: 'Progressivos (2-6 meses)',
+    beneficios: ['Estimula colágeno', 'Firma a pele', 'Efeito natural']
   },
   {
-    id: 4,
-    titulo: 'Bioestimuladores de Colágeno',
-    descricao: 'Estimula a produção natural de colágeno para firmeza e elasticidade',
-    duracao: '30-45 min',
-    resultados: 'Progressivos (2-6 meses)',
-    beforeAfter: 'antes-depois-4.jpg',
-    beneficios: ['Estimula colágeno', 'Firma a pele', 'Efeito duradouro']
+    id: 3,
+    titulo: 'Botox',
+    descricao: 'Aplicação de toxina botulínica para redução de rugas e linhas de expressão',
+    duracao: '20-30 min',
+    resultados: 'Visíveis em 3-7 dias',
+    beneficios: ['Reduz rugas', 'Previne linhas', 'Resultado natural']
   }
-  */
 ]
 
 export default function Servicos() {
@@ -72,22 +57,21 @@ export default function Servicos() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {servicos.map((servico, index) => (
             <motion.div
               key={servico.id}
               initial={{ opacity: 0, y: 50 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
-              className="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden"
+              className="group bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden flex flex-col h-full"
             >
               {/* Before/After Image */}
               <div className="relative h-64 bg-gradient-to-br from-rose-100 to-pink-100 overflow-hidden">
                 <img
-                  src={servico.id === 1 ? '/images/antes-depois/harmonizacao_facil.jpg' : 
-                       servico.id === 2 ? '/images/antes-depois/preenchimento_labial.JPG' : 
-                       servico.id === 3 ? '/images/equipe/atendimento.jpg' : 
-                       '/images/equipe/nova_foto_certificado.jpg'}
+                  src={servico.id === 1 ? '/images/Nossos Tratamentos/Microvasos.jpg' : 
+                       servico.id === 2 ? '/images/Nossos Tratamentos/bioestimulador_de_colageno.jpg' : 
+                       '/images/Nossos Tratamentos/botox.jpg'}
                   alt={`Tratamento - ${servico.titulo}`}
                   className="w-full h-full object-cover"
                 />
@@ -106,7 +90,7 @@ export default function Servicos() {
               </div>
 
               {/* Content */}
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-gray-800 mb-3 group-hover:text-rose-600 transition-colors duration-300">
                   {servico.titulo}
                 </h3>
@@ -143,6 +127,7 @@ export default function Servicos() {
                 </div>
 
                 {/* CTA Button */}
+                <div className="mt-auto">
                 <motion.a
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -154,6 +139,7 @@ export default function Servicos() {
                   Agendar Consulta
                   <FaArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform duration-300" />
                 </motion.a>
+                </div>
               </div>
             </motion.div>
           ))}
