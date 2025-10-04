@@ -34,7 +34,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://wa.me/558199101999"
+                href="https://wa.me/5581991019999"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300"
@@ -94,14 +94,14 @@ export default function Footer() {
               <div className="flex items-start space-x-3">
                 <FaMapMarkerAlt className="text-rose-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <p>Av. Boa Viagem, 123 - Boa Viagem</p>
-                  <p>Recife, PE - CEP: 51020-000</p>
+                  <p>Av. Conselheiro Aguiar, 1360</p>
+                  <p>Recife, PE</p>
                 </div>
               </div>
               
               <div className="flex items-center space-x-3">
                 <FaPhone className="text-rose-400 flex-shrink-0" />
-                <span className="text-gray-300">(81) 99101-9999</span>
+                <span className="text-gray-300">(81) 9101-9999</span>
               </div>
               
               <div className="flex items-center space-x-3">
@@ -113,7 +113,7 @@ export default function Footer() {
                 <FaClock className="text-rose-400 mt-1 flex-shrink-0" />
                 <div className="text-gray-300">
                   <p>Seg - Sex: 9h às 18h</p>
-                  <p>Sábado: 9h às 16h</p>
+                  <p>Sábado: 9h às 12h</p>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://wa.me/558199101999?text=Olá! Gostaria de agendar uma consulta."
+                href="https://wa.me/5581991019999?text=Olá! Gostaria de agendar uma consulta."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold py-3 px-4 rounded-2xl hover:from-green-600 hover:to-green-700 transition-all duration-300 text-center"
@@ -141,7 +141,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://wa.me/558199101999?text=Olá! Gostaria de saber sobre as promoções."
+                href="https://wa.me/5581991019999?text=Olá! Gostaria de saber sobre as promoções."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold py-3 px-4 rounded-2xl hover:from-rose-600 hover:to-pink-700 transition-all duration-300 text-center"
@@ -159,7 +159,7 @@ export default function Footer() {
               <motion.a
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://wa.me/558199101999?text=Olá! Gostaria de receber informações sobre promoções e novidades."
+                href="https://wa.me/5581991019999?text=Olá! Gostaria de receber informações sobre promoções e novidades."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full bg-gray-700 text-white font-medium py-3 px-4 rounded-2xl hover:bg-gray-600 transition-all duration-300 text-center border border-gray-600"

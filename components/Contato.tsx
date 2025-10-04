@@ -11,7 +11,7 @@ export default function Contato() {
 
   const handleWhatsAppClick = (message: string) => {
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://wa.me/558199101999?text=${encodedMessage}`, '_blank')
+    window.open(`https://wa.me/5581991019999?text=${encodedMessage}`, '_blank')
   }
 
   return (
@@ -99,8 +99,8 @@ export default function Contato() {
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">Endereço</h4>
                     <p className="text-gray-600">
-                      Av. Boa Viagem, 123 - Boa Viagem<br />
-                      Recife, PE - CEP: 51020-000
+                      Av. Conselheiro Aguiar, 1360<br />
+                      Recife, PE
                     </p>
                   </div>
                 </div>
@@ -113,7 +113,7 @@ export default function Contato() {
                     <h4 className="font-semibold text-gray-800 mb-1">Horário de Funcionamento</h4>
                     <p className="text-gray-600">
                       Segunda a Sexta: 9h às 18h<br />
-                      Sábado: 9h às 16h<br />
+                      Sábado: 9h às 12h<br />
                       Domingo: Fechado
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export default function Contato() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">Telefone</h4>
-                    <p className="text-gray-600">(81) 99101-9999</p>
+                    <p className="text-gray-600">(81) 9101-9999</p>
                   </div>
                 </div>
 
@@ -161,7 +161,7 @@ export default function Contato() {
                 <motion.a
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  href="https://wa.me/558199101999"
+                  href="https://wa.me/5581991019999"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 bg-gradient-to-r from-green-500 to-green-600 text-white font-semibold py-4 px-6 rounded-2xl hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
@@ -184,7 +184,7 @@ export default function Contato() {
             <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100">
               <div className="relative h-96">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.2847!2d-34.8973!3d-8.1137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1f0b0b0b0b0b%3A0x0!2sAv.%20Boa%20Viagem%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.2847!2d-34.8973!3d-8.1137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20Conselheiro%20Aguiar%2C%201360%2C%20Recife%20-%20PE!5e0!3m2!1spt-BR!2sbr!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -199,7 +199,7 @@ export default function Contato() {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="https://maps.google.com/?q=Av.+Boa+Viagem,+123+-+Boa+Viagem,+Recife+-+PE"
+                    href="https://maps.google.com/?q=Av.+Conselheiro+Aguiar,+1360,+Recife+-+PE"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white shadow-lg px-4 py-2 rounded-full text-gray-700 hover:bg-gray-50 transition-all duration-300 flex items-center space-x-2"

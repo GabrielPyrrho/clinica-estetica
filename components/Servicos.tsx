@@ -8,7 +8,6 @@ const servicos = [
     id: 1,
     titulo: 'Botox & Harmonização Facial',
     descricao: 'Tratamento para rugas de expressão e harmonização dos traços faciais',
-    preco: 'A partir de R$ 350',
     duracao: '30-45 min',
     resultados: 'Visíveis em 3-7 dias',
     beforeAfter: 'antes-depois-1.jpg',
@@ -16,19 +15,19 @@ const servicos = [
   },
   {
     id: 2,
-    titulo: 'Preenchimento Facial',
-    descricao: 'Restaura volume e define contornos faciais com ácido hialurônico',
-    preco: 'A partir de R$ 450',
-    duracao: '45-60 min',
+    titulo: 'Preenchimento Labial',
+    descricao: 'Aumento e definição dos lábios com ácido hialurônico de alta qualidade',
+    duracao: '30-45 min',
     resultados: 'Imediatos',
     beforeAfter: 'antes-depois-2.jpg',
-    beneficios: ['Restaura volume', 'Define contornos', 'Hidrata a pele']
-  },
-  {
+    beneficios: ['Aumenta volume labial', 'Define contorno dos lábios', 'Hidratação natural']
+  }
+  // Serviços comentados temporariamente - para reativar, descomente as linhas abaixo
+  /*
+  ,{
     id: 3,
     titulo: 'Tratamentos Faciais Avançados',
     descricao: 'Protocolos personalizados para rejuvenescimento e cuidados da pele',
-    preco: 'A partir de R$ 200',
     duracao: '60-90 min',
     resultados: 'Progressivos',
     beforeAfter: 'antes-depois-3.jpg',
@@ -38,12 +37,12 @@ const servicos = [
     id: 4,
     titulo: 'Bioestimuladores de Colágeno',
     descricao: 'Estimula a produção natural de colágeno para firmeza e elasticidade',
-    preco: 'A partir de R$ 600',
     duracao: '30-45 min',
     resultados: 'Progressivos (2-6 meses)',
     beforeAfter: 'antes-depois-4.jpg',
     beneficios: ['Estimula colágeno', 'Firma a pele', 'Efeito duradouro']
   }
+  */
 ]
 
 export default function Servicos() {
@@ -84,9 +83,14 @@ export default function Servicos() {
             >
               {/* Before/After Image */}
               <div className="relative h-64 bg-gradient-to-br from-rose-100 to-pink-100 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="text-gray-500 text-lg font-medium">Antes & Depois</span>
-                </div>
+                <img
+                  src={servico.id === 1 ? '/images/antes-depois/harmonizacao_facil.jpg' : 
+                       servico.id === 2 ? '/images/antes-depois/preenchimento_labial.JPG' : 
+                       servico.id === 3 ? '/images/equipe/atendimento.jpg' : 
+                       '/images/equipe/nova_foto_certificado.jpg'}
+                  alt={`Tratamento - ${servico.titulo}`}
+                  className="w-full h-full object-cover"
+                />
                 
                 {/* Overlay with service info */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
@@ -127,11 +131,7 @@ export default function Servicos() {
                 </div>
 
                 {/* Info Grid */}
-                <div className="grid grid-cols-3 gap-4 mb-6 p-4 bg-gray-50 rounded-2xl">
-                  <div className="text-center">
-                    <div className="text-lg font-bold text-rose-600">{servico.preco}</div>
-                    <div className="text-xs text-gray-500">Preço</div>
-                  </div>
+                <div className="grid grid-cols-2 gap-4 mb-6 p-4 bg-gray-50 rounded-2xl">
                   <div className="text-center">
                     <div className="text-lg font-bold text-rose-600">{servico.duracao}</div>
                     <div className="text-xs text-gray-500">Duração</div>
@@ -146,7 +146,7 @@ export default function Servicos() {
                 <motion.a
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
-                  href={`https://wa.me/558199101999?text=Olá! Gostaria de saber mais sobre ${servico.titulo}.`}
+                  href={`https://wa.me/5581991019999?text=Olá! Gostaria de saber mais sobre ${servico.titulo}.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group/btn w-full inline-flex items-center justify-center px-6 py-4 bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold rounded-2xl hover:from-rose-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -176,7 +176,7 @@ export default function Servicos() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://wa.me/558199101999?text=Olá! Gostaria de agendar uma consulta personalizada."
+              href="https://wa.me/5581991019999?text=Olá! Gostaria de agendar uma consulta personalizada."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-semibold rounded-full hover:from-purple-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl"

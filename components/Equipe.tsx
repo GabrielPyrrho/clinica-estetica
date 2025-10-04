@@ -40,7 +40,7 @@ export default function Equipe() {
           >
             <div className="bg-gradient-to-br from-rose-100 to-pink-100 rounded-3xl overflow-hidden shadow-2xl">
               <img
-                src="/images/equipe/certificado .jpg"
+                src="/images/equipe/nova_foto_certificado.jpg"
                 alt="Dra. Eduarda Chaves - Equipe Lumina Estética"
                 className="w-full h-[530px] object-cover object-[center_30%]"
               />
@@ -112,21 +112,7 @@ export default function Equipe() {
               </div>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-gray-200">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-rose-600">10+</div>
-                <div className="text-sm text-gray-600">Anos de Experiência</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-rose-600">5000+</div>
-                <div className="text-sm text-gray-600">Procedimentos</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-rose-600">98%</div>
-                <div className="text-sm text-gray-600">Satisfação</div>
-              </div>
-            </div>
+
           </motion.div>
         </div>
 

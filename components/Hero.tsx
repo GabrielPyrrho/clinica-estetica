@@ -102,12 +102,12 @@ export default function Hero() {
                 className="relative overflow-hidden rounded-2xl shadow-2xl"
               >
                 <img
-                  src="/images/antes-depois/resultado.jpg"
-                  alt="Antes e depois - Rejuvenescimento facial"
+                  src="/images/clinica/ambiente 2.jpg"
+                  alt="Ambiente da clínica Lumina"
                   className="aspect-square object-cover object-center rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <p className="text-white p-4 text-sm font-medium">Tratamento Facial</p>
+                  <p className="text-white p-4 text-sm font-medium">Ambiente Moderno</p>
                 </div>
               </motion.div>
 
@@ -116,12 +116,12 @@ export default function Hero() {
                 className="relative overflow-hidden rounded-2xl shadow-2xl mt-8"
               >
                 <img
-                  src="/images/antes-depois/resultado 2.jpg"
-                  alt="Antes e depois - Harmonização facial"
+                  src="/images/equipe/atendimento.jpg"
+                  alt="Atendimento personalizado"
                   className="aspect-square object-cover object-center rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <p className="text-white p-4 text-sm font-medium">Rejuvenescimento</p>
+                  <p className="text-white p-4 text-sm font-medium">Atendimento</p>
                 </div>
               </motion.div>
 
@@ -130,12 +130,12 @@ export default function Hero() {
                 className="relative overflow-hidden rounded-2xl shadow-2xl -mt-4"
               >
                 <img
-                  src="/images/antes-depois/resultado 3.jpg"
-                  alt="Antes e depois - Botox"
+                  src="/images/equipe/Produtos.jpg"
+                  alt="Produtos de qualidade"
                   className="aspect-square object-cover object-center rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <p className="text-white p-4 text-sm font-medium">Harmonização</p>
+                  <p className="text-white p-4 text-sm font-medium">Produtos Premium</p>
                 </div>
               </motion.div>
 
@@ -144,12 +144,12 @@ export default function Hero() {
                 className="relative overflow-hidden rounded-2xl shadow-2xl mt-4"
               >
                 <img
-                  src="/images/clinica/ambiente 2.jpg"
-                  alt="Ambiente da clínica"
+                  src="/images/clinica/atendimento 3.jpg"
+                  alt="Processo de atendimento"
                   className="aspect-square object-cover object-center rounded-2xl"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <p className="text-white p-4 text-sm font-medium">Botox</p>
+                  <p className="text-white p-4 text-sm font-medium">Cuidado Profissional</p>
                 </div>
               </motion.div>
             </div>

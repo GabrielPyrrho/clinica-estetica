@@ -27,7 +27,7 @@ export default function WhatsAppFloat() {
 
   const handleWhatsAppClick = (message: string) => {
     const encodedMessage = encodeURIComponent(message)
-    window.open(`https://wa.me/558199101999?text=${encodedMessage}`, '_blank')
+    window.open(`https://wa.me/5581991019999?text=${encodedMessage}`, '_blank')
     setIsOpen(false)
   }
 

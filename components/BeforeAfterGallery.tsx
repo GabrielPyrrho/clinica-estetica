@@ -7,16 +7,16 @@ import { FaArrowLeft, FaArrowRight, FaTimes } from 'react-icons/fa'
 const beforeAfterImages = [
   {
     id: 1,
-    title: 'Rejuvenescimento Facial',
-    description: 'Tratamento completo para redução de rugas e manchas',
-    category: 'Facial',
-    image: '/images/antes-depois/resultado.jpg',
+    title: 'Preenchimento Labial',
+    description: 'Aumento e definição dos lábios com ácido hialurônico',
+    category: 'Preenchimento',
+    image: '/images/antes-depois/preenchimento_labial.JPG',
     details: {
-      procedimento: 'Bioestimulador + Skinbooster',
-      duracao: '60 minutos',
-      resultados: 'Visíveis em 15 dias',
-      manutencao: 'A cada 6 meses',
-      beneficios: ['Reduz rugas finas', 'Melhora textura', 'Hidratação profunda', 'Estimula colágeno']
+      procedimento: 'Ácido Hialurônico',
+      duracao: '30 minutos',
+      resultados: 'Imediatos',
+      manutencao: 'A cada 8-12 meses',
+      beneficios: ['Aumenta volume', 'Define contorno', 'Hidrata os lábios', 'Resultado natural']
     }
   },
   {
@@ -24,7 +24,7 @@ const beforeAfterImages = [
     title: 'Harmonização Facial',
     description: 'Botox e preenchimento para harmonização dos traços',
     category: 'Harmonização',
-    image: '/images/antes-depois/resultado 2.jpg',
+    image: '/images/antes-depois/harmonizacao_facil.jpg',
     details: {
       procedimento: 'Botox + Preenchimento labial',
       duracao: '45 minutos',
@@ -221,7 +221,7 @@ export default function BeforeAfterGallery() {
                       {/* CTA */}
                       <div className="border-t pt-6">
                         <a
-                          href="https://wa.me/558199101999?text=Olá! Vi o resultado de ${selectedImg.title} no site e gostaria de agendar uma consulta."
+                          href="https://wa.me/5581991019999?text=Olá! Vi o resultado de ${selectedImg.title} no site e gostaria de agendar uma consulta."
                           target="_blank"
                           rel="noopener noreferrer"
                           className="w-full bg-gradient-to-r from-rose-500 to-pink-600 text-white font-semibold py-3 px-6 rounded-2xl hover:from-rose-600 hover:to-pink-700 transition-all duration-300 inline-block text-center"
@@ -254,7 +254,7 @@ export default function BeforeAfterGallery() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="https://wa.me/558199101999?text=Olá! Vi os resultados no site e gostaria de agendar uma consulta."
+              href="https://wa.me/5581991019999?text=Olá! Vi os resultados no site e gostaria de agendar uma consulta."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-600 text-white font-semibold rounded-full hover:from-purple-600 hover:to-pink-700 transition-all duration-300 shadow-lg hover:shadow-xl"

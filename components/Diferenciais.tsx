@@ -127,65 +127,7 @@ export default function Diferenciais() {
           })}
         </div>
 
-        {/* Stats Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-20"
-        >
-          <div className="bg-gradient-to-r from-rose-500 to-pink-600 rounded-3xl p-8 lg:p-12 text-white">
-            <div className="grid md:grid-cols-4 gap-8 text-center">
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={inView ? { scale: 1 } : {}}
-                  transition={{ duration: 0.8, delay: 0.8 }}
-                  className="text-4xl lg:text-5xl font-bold mb-2"
-                >
-                  5000+
-                </motion.div>
-                <div className="text-rose-100">Clientes Atendidos</div>
-              </div>
-              
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={inView ? { scale: 1 } : {}}
-                  transition={{ duration: 0.8, delay: 1.0 }}
-                  className="text-4xl lg:text-5xl font-bold mb-2"
-                >
-                  98%
-                </motion.div>
-                <div className="text-rose-100">Satisfação</div>
-              </div>
-              
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={inView ? { scale: 1 } : {}}
-                  transition={{ duration: 0.8, delay: 1.2 }}
-                  className="text-4xl lg:text-5xl font-bold mb-2"
-                >
-                  10+
-                </motion.div>
-                <div className="text-rose-100">Anos de Experiência</div>
-              </div>
-              
-              <div>
-                <motion.div
-                  initial={{ scale: 0 }}
-                  animate={inView ? { scale: 1 } : {}}
-                  transition={{ duration: 0.8, delay: 1.4 }}
-                  className="text-4xl lg:text-5xl font-bold mb-2"
-                >
-                  50+
-                </motion.div>
-                <div className="text-rose-100">Tratamentos Disponíveis</div>
-              </div>
-            </div>
-          </div>
-        </motion.div>
+
 
         {/* Testimonial */}
         <motion.div
@@ -214,7 +156,7 @@ export default function Diferenciais() {
             </blockquote>
             
             <div className="text-rose-600 font-semibold">
-              Maria Silva - Cliente há 3 anos
+              Maria Silva - Cliente
             </div>
           </div>
         </motion.div>

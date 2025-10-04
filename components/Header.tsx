@@ -34,7 +34,7 @@ export default function Header() {
       }`}
     >
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -44,12 +44,12 @@ export default function Header() {
             <img
               src="/images/logo/ChatGPT Image 18 de set. de 2025, 01_52_43.png"
               alt="Lumina Estética Avançada"
-              className="h-20 w-auto object-contain"
+              className="h-28 w-auto object-contain"
             />
           </motion.div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             {[
               { name: 'Início', id: 'hero' },
               { name: 'Diferenciais', id: 'diferenciais' },
@@ -60,7 +60,7 @@ export default function Header() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-gray-700 hover:text-rose-600 font-medium transition-colors duration-300 relative group"
+                className="text-gray-800 hover:text-rose-600 font-semibold text-lg transition-colors duration-300 relative group px-3 py-2 rounded-lg hover:bg-rose-50"
               >
                 {item.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-rose-600 to-pink-600 group-hover:w-full transition-all duration-300"></span>
@@ -71,16 +71,16 @@ export default function Header() {
           {/* Social Links & Mobile Menu */}
           <div className="flex items-center space-x-4">
             {/* Social Links */}
-            <div className="hidden sm:flex items-center space-x-3">
+            <div className="hidden sm:flex items-center space-x-4">
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
                 href="https://wa.me/5581991019999?text=Olá! Gostaria de mais informações sobre os tratamentos."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300"
+                className="w-12 h-12 bg-green-500 text-white rounded-full flex items-center justify-center hover:bg-green-600 transition-colors duration-300 shadow-lg hover:shadow-xl"
               >
-                <FaWhatsapp />
+                <FaWhatsapp className="text-lg" />
               </motion.a>
               <motion.a
                 whileHover={{ scale: 1.1 }}
@@ -88,18 +88,18 @@ export default function Header() {
                 href="https://www.instagram.com/luminaesteticaboaviagem"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full flex items-center justify-center hover:from-pink-600 hover:to-rose-600 transition-all duration-300"
+                className="w-12 h-12 bg-gradient-to-r from-pink-500 to-rose-500 text-white rounded-full flex items-center justify-center hover:from-pink-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
               >
-                <FaInstagram />
+                <FaInstagram className="text-lg" />
               </motion.a>
             </div>
 
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center text-gray-700 hover:bg-gray-200 transition-colors duration-300"
+              className="md:hidden w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center text-rose-600 hover:bg-rose-200 transition-colors duration-300 shadow-md"
             >
-              {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+              {isMobileMenuOpen ? <FaTimes className="text-lg" /> : <FaBars className="text-lg" />}
             </button>
           </div>
         </div>
