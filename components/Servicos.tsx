@@ -6,8 +6,8 @@ import { FaStar, FaArrowRight } from 'react-icons/fa'
 const servicos = [
   {
     id: 1,
-    titulo: 'Microvasos',
-    descricao: 'Tratamento para eliminação de microvasos e capilares visíveis no rosto',
+    titulo: 'Tratamento de Microvasos',
+    descricao: 'Eliminação de microvasos e capilares visíveis no rosto com tecnologia avançada',
     duracao: '30-45 min',
     resultados: 'Visíveis em 1-2 semanas',
     beneficios: ['Remove microvasos', 'Uniformiza a pele', 'Resultado duradouro']
@@ -22,7 +22,7 @@ const servicos = [
   },
   {
     id: 3,
-    titulo: 'Botox',
+    titulo: 'Aplicação de Botox',
     descricao: 'Aplicação de toxina botulínica para redução de rugas e linhas de expressão',
     duracao: '20-30 min',
     resultados: 'Visíveis em 3-7 dias',
@@ -70,7 +70,7 @@ export default function Servicos() {
               <div className="relative h-64 bg-gradient-to-br from-rose-100 to-pink-100 overflow-hidden">
                 <img
                   src={servico.id === 1 ? '/images/Nossos Tratamentos/Microvasos.jpg' : 
-                       servico.id === 2 ? '/images/Nossos Tratamentos/bioestimulador_de_colageno.jpg' : 
+                       servico.id === 2 ? '/images/Nossos Tratamentos/bioestimulador_de_colageno.png' : 
                        '/images/Nossos Tratamentos/botox.jpg'}
                   alt={`Tratamento - ${servico.titulo}`}
                   className="w-full h-full object-cover"
